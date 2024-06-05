@@ -1,15 +1,16 @@
 export default function Button({
   children,
   className,
-  onClick
+  onClick,
+  disabled = false
 }: {
   children: React.ReactNode
-  text: string
   className: string
   onClick: () => void
+  disabled?: boolean
 }) {
   return (
-    <button type="button" className={className} onClick={onClick}>
+    <button type="button" className={className} onClick={onClick} disabled={disabled}>
       {children}
     </button>
   )
