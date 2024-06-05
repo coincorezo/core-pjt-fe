@@ -1,18 +1,24 @@
+import '@fortawesome/fontawesome-free/css/fontawesome.min.css'
+import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import { faEnvelope, faFolder, faHeart, faHome } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
+
 export default function Nav() {
   return (
     <nav id="nav">
-      <a href="#" className="icon solid fa-home">
-        <span>Home</span>
-      </a>
-      <a href="#work" className="icon solid fa-folder">
-        <span>Work</span>
-      </a>
-      <a href="#contact" className="icon solid fa-envelope">
-        <span>Contact</span>
-      </a>
-      <a href="https://twitter.com/ajlkn" className="icon brands fa-twitter">
-        <span>Twitter</span>
-      </a>
+      <Link href="#" className="icon solid fa-home">
+        <FontAwesomeIcon icon={faHome as IconProp} style={{ width: '50px' }} />
+      </Link>
+      <Link href="#work" className="icon solid fa-folder">
+        <FontAwesomeIcon icon={faFolder as IconProp} style={{ width: '50px' }} />
+      </Link>
+      <Link href="#contact" className="icon solid fa-envelope">
+        <FontAwesomeIcon icon={faEnvelope as IconProp} style={{ width: '50px' }} />
+      </Link>
+      <Link href="https://twitter.com/ajlkn" className="icon brands fa-twitter">
+        <FontAwesomeIcon icon={faHeart as IconProp} style={{ width: '50px' }} />
+      </Link>
     </nav>
   )
 }

@@ -1,8 +1,6 @@
 import '../../css/main.css'
 import '../../css/noscript.css'
-import '../../css/fontawesome-all.min.css'
 import Script from 'next/script'
-
 export default function Head() {
   return (
     <>
