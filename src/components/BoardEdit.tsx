@@ -6,6 +6,7 @@ import Checkbox from '@/components/common/Checkbox'
 import Radio from '@/components/common/Radio'
 import Modal from '@/components/common/Modal'
 import { useState } from 'react'
+import Select from '@/components/common/Select'
 
 export default function BoardEdit() {
   const [isOpen, setIsOpen] = useState(false)
@@ -50,6 +51,18 @@ export default function BoardEdit() {
               <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
                 <div>모달</div>
               </Modal>
+            </div>
+            <div>
+              <Select
+                onChange={() => {}}
+                name={'select-box'}
+                options={[
+                  { value: '', text: '선택' },
+                  { value: '1', text: '1' },
+                  { value: '2', text: '2' },
+                  { value: '3', text: '3' }
+                ]}
+              />
             </div>
           </div>
         </div>
