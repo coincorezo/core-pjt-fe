@@ -1,4 +1,5 @@
 import Button from '@/components/common/button'
+import Textarea from '@/components/common/Textarea'
 
 export default function BoardEdit() {
   return (
@@ -25,6 +26,7 @@ export default function BoardEdit() {
               <input type="submit" value="Send Message" />
             </div>
             <Button>버튼</Button>
+            <Textarea />
           </div>
         </div>
       </form>
