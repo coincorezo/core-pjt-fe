@@ -65,3 +65,18 @@
   width: 1.25em;
   height: 1.25em;
 }
+
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top:15%;
+    margin-bottom: 5%;
+    
+}
+/* @media (max-width: calc(100% - 8em)) {
+    .right-align {
+      float: right;
+    }
+} */
+
