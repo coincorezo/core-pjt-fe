@@ -1,4 +1,4 @@
-import Button from '@/components/common/button'
+import Button from '@/components/common/Button'
 import Textarea from '@/components/common/Textarea'
 
 export default function BoardEdit() {
