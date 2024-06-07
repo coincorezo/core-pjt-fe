@@ -37,13 +37,19 @@ export default function BoardEdit() {
             <Button>버튼</Button>
             <Textarea />
             <div>
-              <Checkbox name={'button'} value={'1'} onChange={() => {}}>
+              <Checkbox name={'button'} id={'checkbox1'} value={'1'} onChange={() => {}}>
                 sdlfjlklk
               </Checkbox>
             </div>
             <div>
-              <Radio name={'btn'} value={'1'} onChange={() => {}}>
-                radio
+              <Radio name={'btn'} id={'radio1'} value={'1'} onChange={() => {}}>
+                radio1
+              </Radio>
+              <Radio name={'btn'} id={'radio2'} value={'2'} onChange={() => {}}>
+                radio2
+              </Radio>
+              <Radio name={'btn'} id={'radio3'} value={'3'} onChange={() => {}}>
+                radio3
               </Radio>
             </div>
             <div>

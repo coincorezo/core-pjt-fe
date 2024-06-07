@@ -5,6 +5,7 @@ import { useState } from 'react'
 interface Props {
   children: React.ReactNode
   name: string
+  id: string
   value: string
   checked?: boolean
   onChange: (checked: boolean) => void
@@ -12,7 +13,7 @@ interface Props {
   required?: boolean
 }
 
-export default function Checkbox({ children, name, value, checked, onChange, disabled, required }: Props) {
+export default function Checkbox({ children, name, id, value, checked, onChange, disabled, required }: Props) {
   const [isChecked, setIsChecked] = useState(checked)
 
   return (
@@ -20,6 +21,7 @@ export default function Checkbox({ children, name, value, checked, onChange, dis
       <input
         type="checkbox"
         name={name}
+        id={id}
         value={value}
         checked={isChecked}
         onChange={e => {
@@ -29,7 +31,7 @@ export default function Checkbox({ children, name, value, checked, onChange, dis
         disabled={disabled}
         required={required}
       />
-      {children}
+      <label htmlFor={id}>{children}</label>
     </>
   )
 }
