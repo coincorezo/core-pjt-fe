@@ -1,7 +1,15 @@
+'use client'
+
 import Button from '@/components/common/Button'
 import Textarea from '@/components/common/Textarea'
+import Checkbox from '@/components/common/Checkbox'
+import Radio from '@/components/common/Radio'
+import Modal from '@/components/common/Modal'
+import { useState } from 'react'
 
 export default function BoardEdit() {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <article id="contact" className="panel">
       <header>
@@ -27,6 +35,22 @@ export default function BoardEdit() {
             </div>
             <Button>버튼</Button>
             <Textarea />
+            <div>
+              <Checkbox name={'button'} value={'1'} onChange={() => {}}>
+                sdlfjlklk
+              </Checkbox>
+            </div>
+            <div>
+              <Radio name={'btn'} value={'1'} onChange={() => {}}>
+                radio
+              </Radio>
+            </div>
+            <div>
+              <Button onClick={() => setIsOpen(true)}>모달 오픈</Button>
+              <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+                <div>모달</div>
+              </Modal>
+            </div>
           </div>
         </div>
       </form>
