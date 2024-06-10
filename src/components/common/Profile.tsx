@@ -6,7 +6,7 @@ interface Props {
   alt: string
 }
 
-export default function Temp({ type, alt }: Props) {
+export default function Profile({ type, alt }: Props) {
   return (
     <>
       {type === 'myPage' ? (
