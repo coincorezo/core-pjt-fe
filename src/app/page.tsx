@@ -3,13 +3,16 @@ import Nav from '@/components/common/Nav'
 import Mypage from '@/components/Mypage'
 import Emoticon from '@/components/common/Emoticon'
 import BoardEdit from '@/components/BoardEdit'
+import Header from '@/components/common/Header'
+import HeaderMark from '@/components/common/HeaderMark'
+
 
 export default function Home() {
   return (
     <div id="wrapper">
-      <div className="container">
-        <div className="right-align">오른쪽에 정렬됩니다.</div>
-      </div>
+      <HeaderMark />
+      <Header />
+
       <Nav />
       <div id="main">
         <Mypage />

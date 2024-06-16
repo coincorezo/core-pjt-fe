@@ -70,7 +70,15 @@
 .container {
     display: flex;
     justify-content: flex-end;
-    margin-top:15%;
+    margin-top:-5%;
+    margin-bottom: 5%;
+    
+}
+
+.containerImg {
+    display: flex;
+    justify-content: flex-end;
+    margin-top:-3%;
     margin-bottom: 5%;
     
 }
