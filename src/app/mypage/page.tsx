@@ -1,5 +1,5 @@
 import Mypage from '@/components/Mypage'
 
-export default function Home() {
+export default function MyPage() {
   return <Mypage />
 }

@@ -1,6 +1,10 @@
 import './globals.css'
 // import '../css/main.css'
 import Head from '@/components/common/Head'
+import HeaderMark from '@/components/common/HeaderMark'
+import Header from '@/components/common/Header'
+import Nav from '@/components/common/Nav'
+import Footer from '@/components/common/Footer'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +21,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head />
-      <body>{children}</body>
+      <body>
+        <div id="wrapper">
+          <HeaderMark />
+          <Header />
+          <Nav />
+          <div id="main">{children}</div>
+          <Footer />
+        </div>
+      </body>
     </html>
   )
 }
