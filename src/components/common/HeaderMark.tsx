@@ -1,7 +1,9 @@
 import Image from 'next/image'
-export default function Header({  ...props }) {
-  
-return        <div className="containerImg">
-<Image src="/images/crazecoin/coin.png" alt="" width={150} height={150} />
-</div>
+
+export default function Header({ ...props }) {
+  return (
+    <div className="logo">
+      <Image src="/images/crazecoin/coin.png" alt="로고" width={201} height={163} />
+    </div>
+  )
 }

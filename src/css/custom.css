@@ -66,25 +66,14 @@
   height: 1.25em;
 }
 
-
-.container {
-    display: flex;
-    justify-content: flex-end;
-    margin-top:-5%;
-    margin-bottom: 5%;
-    
-}
-
-.containerImg {
+.logo {
     display: flex;
     justify-content: flex-end;
     margin-top:-3%;
-    margin-bottom: 5%;
-    
+    margin-bottom: 3%;
 }
-/* @media (max-width: calc(100% - 8em)) {
-    .right-align {
-      float: right;
-    }
-} */
 
+.right-align {
+  width: 100%;
+  text-align: right;
+}
