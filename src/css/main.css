@@ -1379,7 +1379,7 @@ html {
 }
 
 body {
-  background-image: url('/images/overlay.png'), url('/images/bg.jpg');
+  background-image:linear-gradient(#EFE8D8, #FEFFD2);
   background-repeat: repeat, no-repeat;
   background-size:
     auto,
